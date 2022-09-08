@@ -746,53 +746,7 @@
 
     <div class="backdrop is-hidden  " data-modal>
       <div class="modal  ">
-
-<form class="modal-form" autocomplete="on" >
-  <p class="modal-text">Залиште свої дані, ми вам передзвонимо</p>
-  <div class="form-box">
-    <div  class="form-field">
-      <label for="name"  class="form-label">Ім'я</label>
-      <div class="icon-box">
-        <input type="text" name="name"id="name" class="form-input">
-        <svg class="icon-modal">
-          <use href="./images/symbol-defs.svg#icon-man" 
-      ></use>
-        </svg>
-      </div>
-    
-     </div>
-     <div class="form-field">
-       <label for="tel" class="form-label">Телефон</label>
-       <div class="icon-box">
-        <input type="tel" name="tel" id="tel" class="form-input">
-        <svg  class="icon-modal"  >
-         <use href="./images/symbol-defs.svg#icon-phone-2"></use>
-       </svg>
-       </div>
-      
-     </div>
-     <div class="form-field">
-       <label for="email" class="form-label">Пошта</label>
-       <div class="icon-box">
-        <input type="email" name="email" id="email" class="form-input" >
-        <svg  class="icon-modal"  >
-         <use href="./images/symbol-defs.svg#icon-mail-2"></use>
-       </svg>
-     </div>
-     <div class="form-field">
-       <label for="comment" class="form-label">Коментар</label>
-       <textarea name="comment" id="comment"  class=" text-area" placeholder="Введіть текст" cols="30" rows="10"></textarea>
-     </div>
-  </div>
- 
-  <div class="agree-policy">
-    <input type="checkbox"  name="agree-poilicy" id="agree-poilicy" class="policy">
-    <label for="agree-poilicy" class="agree-label" ">Погоджуюся з розсилкою та приймаю <span ><a href="#" class="policy-link">Умови договору</a></span></label>
-  </div>
-  <button type="submit" class="send-button">Відправити</button>
-</form>
-
-
+        
         <button
           class="close-modal"
           type="button"
@@ -804,6 +758,50 @@
           ></use>
         </svg>
         </button>
+        <p class="modal-text">Залиште свої дані, ми вам передзвонимо</p>
+<form class="modal-form" autocomplete="on" >
+    <div  class="form-field">
+      <label for="name"  class="form-label">Ім'я</label>
+      <div class="icon-box">
+        <input type="text" name="name"id="name" class="form-input">
+        <svg class="icon-input">
+          <use href="./images/symbol-defs.svg#icon-man" 
+      ></use>
+        </svg>
+      </div>
+    
+     </div>
+     <div class="form-field">
+       <label for="tel" class="form-label">Телефон</label>
+       <div class="icon-box">
+        <input type="tel" name="tel" id="tel" class="form-input">
+        <svg  class="icon-input"  >
+         <use href="./images/symbol-defs.svg#icon-modal-phone"></use>
+       </svg>
+       </div>
+      
+     </div>
+     <div class="form-field">
+       <label for="email" class="form-label">Пошта</label>
+       <div class="icon-box">
+        <input type="email" name="email" id="email" class="form-input" >
+        <svg  class="icon-input"  >
+         <use href="./images/symbol-defs.svg#icon-modal-email"></use>
+       </svg></div>
+     </div>
+     <div class="form-field">
+      <label for="comment" class="form-label">Коментар</label>
+      <textarea name="comment" id="comment"  class=" text-area" placeholder="Введіть текст" ></textarea>
+    </div>
+</form>
+
+
+  <div class="agree-policy">
+    <input type="checkbox"  name="agree-poilicy" id="agree-poilicy" class="policy-checkbox">
+    <label for="agree-poilicy" class="policy-label" ">Погоджуюся з розсилкою та приймаю <span ><a href="#" class="policy-link">Умови договору</a></span></label>
+  </div>
+  <button type="submit" class="send-button">Відправити</button>
+
       
       </div>
     </div>

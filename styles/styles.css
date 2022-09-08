@@ -713,9 +713,10 @@ pointer-events: none;
 }
 .modal {
   position: absolute;
- 
   min-width: 528px;
   min-height: 581px;
+
+  padding: 40px;
  
   transform: scale(1) rotate(360deg) ;
   transition:transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -756,64 +757,72 @@ color:var(--title-color);
 margin-bottom: 12px;
 }
 .modal-form{
-width: 528px;
+width: 100%;
+margin-bottom: 20px;
 
 margin-left: auto;
 margin-right: auto;
-padding: 40px;
+
 
 }
 .form-field{
-
   display: flex;
   flex-direction: column;
- 
 }
 .form-field:not(:last-child){
-margin-bottom:10px;
+  margin-bottom: 10px;
 }
 
 .form-input{
   width: 100%;
   height: 40px;
   margin: 0px;
-  padding-left: 28px;
+  padding-left: 30px;
  
 border: 1px solid rgba(33, 33, 33, 0.2);
 border-radius: 4px;
 outline: none;
+cursor: pointer;
+ 
 }
 
-.form-input:focus{
-  border: solid var(--accent-color);
+.form-input:focus,
+.text-area:focus {
+  border:1px solid var(--accent-color);
 }
-/* .form-input .icon-modal:focus{
-  fill: var(--accent-color);
-} */
 
+.form-input:focus + .icon-input{
+  fill:var(--accent-color)
+}
 
-.icon-modal{
+.icon-input{
   position: absolute;
   bottom: 11px;
   left: 12px;
 
   Width: 18px;
   Height:18px;
+  fill:  #212121;
 
-  fill: #212121;
 }
+
 .icon-box{
   position: relative;
 }  
 
 
 .text-area{
+  display: block;
+    Width:100%;
+    min-height:120px;
+    overflow: auto;
+
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   padding:12px 16px;
-
   outline: none;
 }
+
 .text-area::placeholder{
   font-size: 12px;
 line-height: 14px;
@@ -829,24 +838,32 @@ margin-bottom: 4px;
 margin-right: auto;
 }
 .form-box{
-  margin-bottom:20px ;
+  margin-bottom:32px ;
 
 
 }
 .agree-policy{
   display: flex;
  justify-content: center;
-
  margin-bottom: 30px;
+
+
 vertical-align: middle;
+
 }
-.agree-label{
+.policy-checkbox{
+  margin-right: 7px;
+  
+}
+.policy-labell{
+ 
   margin-left: 9px;
 
 }
 .policy-link{
   text-decoration: underline;
   color: var(--accent-color);
+
 }
 
 .send-button{
@@ -870,6 +887,7 @@ vertical-align: middle;
 
   transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.send-button:hover{
+.send-button:hover
+.send-button:focus{
   background-color: var(--button-active);
 }
