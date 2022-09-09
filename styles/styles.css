@@ -18,6 +18,7 @@
   --portfolio-description-text: #ffffff;
   --portfolio-description-backgound: rgba( 33,150,243,0.9 );
  --modal-background:#fff;
+ --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
  
 }
 h1,
@@ -127,7 +128,7 @@ body {
   padding-bottom: 32px;
   display: block;
 
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color var(transition);
 }
 .nav-link:hover,
 .nav-contacts:hover,
@@ -168,7 +169,7 @@ body {
   height: 4px;
   background-color: var(--accent-color);
  
-  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background var(--transition);
 
 }
 /* < !-- секція hero --> */
@@ -212,7 +213,7 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   margin-left: auto;
   margin-right: auto;
 
-  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1),box-shadow250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background var(--transition),box-shadow var(--transition);
 }
 
 .hero-button:hover,
@@ -387,8 +388,8 @@ background-color: rgba(47, 48, 58, 0.8);
   background-color: var(--link-backgound);
   color: var(--link-color);
 
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-  background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color var(--transition),
+  background var(--transition);
 }
 .social-link:hover,
 .social-link:focus {
@@ -411,7 +412,7 @@ background-color: rgba(47, 48, 58, 0.8);
   border-radius: 50px;
   color: var(--link-footer-color-text);
   background-color: var(--link-footer-background);
-  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background var(--transition);
 }
 
 .social-link-footer:hover,
@@ -442,8 +443,8 @@ border: 1px solid var(--link-color);
   border-radius: 4px;
   color: var(--link-color);
 
-  transition:color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-  border-color 250ms cubic-bezier(0.4, 0, 0.2, 1)
+  transition:color var(--transition),
+  border-color var(--transition);
 }
 .icon-clients {
   fill: currentColor;
@@ -585,9 +586,9 @@ letter-spacing: 0.06em;
   border: none;
   border-radius: 4px; 
 
-transition:background 250ms cubic-bezier(0.4, 0, 0.2, 1),
-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
- box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+transition:background var(--transition),
+color var(--transition),
+ box-shadow var(--transition);
 
 }
 .portfolio-buttons:hover,
@@ -656,7 +657,7 @@ bottom : 0px;
   left: 0px;
   opacity: 1;
  transform: translateY(100%);
- transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ transition: transform var(--transition);
 width: 100%;
 height: 100%;
 
@@ -666,7 +667,7 @@ height: 100%;
     left: 0px;
     opacity: 1;
    transform: translateY(100%);
-   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   transition: transform var(--transition);
   width: 100%;
   height: 100%;
     padding: 63px 24px;
@@ -701,7 +702,7 @@ height: 100%;
   height: 100%;
   z-index: 99;
   background: rgba(0, 0, 0, 0.2);
-   transition:opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   transition:opacity var(--transition),visibility var(--transition);
 }
 .is-hidden{
 visibility: hidden;
@@ -720,7 +721,7 @@ pointer-events: none;
   padding: 40px;
  
   transform: scale(1) rotate(360deg) ;
-  transition:transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition:transform var(--transition);
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -744,7 +745,7 @@ pointer-events: none;
  
   background-color:var(--modal-background);
   color: rgba(0, 0, 0, 1);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+  transition: fill var(--transition); 
 }
 .close-modal:hover .icon-close,
 .close-modal:focus .icon-close{
@@ -809,7 +810,7 @@ cursor: pointer;
   Width: 18px;
   Height:18px;
   fill:  #212121;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill var(--transition),transform var(--transition);
 
 }
 .form-input:focus + .icon-input{
@@ -889,7 +890,7 @@ border:solid var(--accent-color);
  
 }
 .checkbox-origin:focus + .custom-checkbox{
-  box-shadow: 0 0 0 1px #000000;
+  box-shadow: 0 0 0 1px var(--accent-color);
 }
 
 .checkbox-origin{
@@ -921,7 +922,7 @@ border:solid var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px; 
 
- transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ transition: background var(--transition);
 }
 .send-button:hover
 .send-button:focus{
