@@ -864,15 +864,28 @@ margin-right: auto;
 vertical-align: middle;
 
 }
-.policy-checkbox{
-  margin-right: 7px;
-  
-}
-.policy-labell{
- 
-  margin-left: 9px;
+.custom-checkbox{
+  width:16px;
+  height:15px;
+border: 1px solid black;
+border-radius:2px;
 
 }
+.custom-checkbox-icon{
+  display:none;
+  width:16px;
+  height:15px;
+}  
+.policy-checkbox:checked + .custom-checkbox{
+  background-color: var(--accent-color);
+}
+.policy-checkbox:checked + .custom-checkbox .custom-checkbox-icon{
+  display: block;
+
+}
+
+
+
 .policy-link{
   text-decoration: underline;
   color: var(--accent-color);
