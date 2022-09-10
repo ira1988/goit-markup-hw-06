@@ -720,7 +720,7 @@
             </li>
           </ul>
         </div>
-        <div class="subscribe">
+        <form class="subscribe">
           <p class="subscribe-text">Підпишіться на розсилку</p>
           <div class="subscribe-box">
             <input type="email" name="email" placeholder="E-mail" class="subscribe-input">
@@ -737,7 +737,7 @@
            
             </div>
            
-          </div>
+          </form>
              
      
     </footer>
@@ -759,7 +759,8 @@
         </svg>
         </button>
         <p class="modal-text">Залиште свої дані, ми вам передзвонимо</p>
-<form class="modal-form" autocomplete="on" >
+<form class="modal-form" autocomplete="on">
+  <div class="input-box">
     <div  class="form-field">
       <label for="name"  class="form-label">Ім'я</label>
       <div class="icon-box">
@@ -793,18 +794,24 @@
       <label for="comment" class="form-label">Коментар</label>
       <textarea name="comment" id="comment"  class=" text-area" placeholder="Введіть текст" ></textarea>
     </div>
+  </div>
+
+   
+
+
+    <label for="agree-poilicy" class="checkbox-lable">
+      <input type="checkbox"  name="agree-poilicy" id="agree-poilicy" class="checkbox-origin">
+      <svg class="custom-checkbox">
+        <use class="custom-checkbox-icon" href="./images/symbol-defs.svg#icon-confirm"></use>
+      </svg>
+      Погоджуюся з розсилкою та приймаю &#160 <a href="#" class="policy-link">Умови договору</a>
+      </label>
+  
+    <button type="submit" class="send-button">Відправити</button>
 </form>
 
 
-<label for="agree-poilicy" class="checkbox-lable">
-    <input type="checkbox"  name="agree-poilicy" id="agree-poilicy" class="checkbox-origin">
-    <svg class="custom-checkbox">
-      <use class="custom-checkbox-icon" href="./images/symbol-defs.svg#icon-confirm"></use>
-    </svg>
-    Погоджуюся з розсилкою та приймаю &#160 <span ><a href="#" class="policy-link">Умови договору</a></span>
-    </label>
 
-  <button type="submit" class="send-button">Відправити</button>
 
       
       </div>
